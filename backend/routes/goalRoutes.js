@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const { getGoals, setGoal, updateGoal, deleteGoal } = require('../controllers/goalControllers')
-
+// const {protect} = require('../middleware/')
 
 
 router.route('/').get(getGoals).post(setGoal)
